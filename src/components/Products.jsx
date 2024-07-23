@@ -9,77 +9,63 @@ const Products = () => {
 
     const initialProductsData = {
         'rtd-sensor': [
-            { name: 'Product A', price: 30, img: 'IMG_20240227_010648.png' },
-            { name: 'Product B', price: 40, img: 'datalogger.png' }
-        ],
+                { name: 'Transition Type RTD', price: 30, img: 'src/components/Images/IMG_20240227_010648.png' },
+                { name: 'Head Type RTD W/P', price: 40, img: 'src/components/Images/datalogger.png' },
+                { name: 'Flameproof Head Type RTD', price: 40, img: 'src/components/Images/datalogger.png' },
+                { name: 'Surface Type RTD', price: 40, img: 'src/components/Images/datalogger.png' },
+                { name: 'Slot Type RTD', price: 40, img: 'src/components/Images/datalogger.png' }
+
+            ],
         'thermo-couples': [
-            { name: 'Product C', price: 25, img: 'hum-sensor.png' },
-            { name: 'Product D', price: 35, img: 'IMG20211230185627.png' }
-        ], 'indicators': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
+                { name: 'J Type Thermocouple', price: 25, img: 'src/components/Images/hum-sensor.png' },
+                { name: 'K Type Thermocouple', price: 25, img: 'src/components/Images/hum-sensor.png' },
+                { name: 'R Type Thermocouple', price: 25, img: 'src/components/Images/hum-sensor.png' },
+                { name: 'S Type Thermocouple', price: 25, img: 'src/components/Images/hum-sensor.png' },
+                { name: 'N Type Thermocouple', price: 35, img: 'src/components/Images/IMG20211230185627.png' }
 
-      ],
-      'pid-controller': [
-          { name: 'Product G', price: 60, img: 'IMG_20240227_010648.png' },
-          { name: 'Product H', price: 70, img: 'hum-sensor.png' }
+            ]
+            ,'thermowell': [
+                { name: 'Febricated Thermowell', price: 20, img: 'IMG20211230185627.png' },
+                { name: 'Bar Stoke Thermowell', price: 20, img: 'IMG20211230185627.png' },
+                { name: 'Flange Thermowell', price: 20, img: 'IMG20211230185627.png' },
+                { name: 'Threaded Thermowell', price: 20, img: 'IMG20211230185627.png' },
+                { name: 'Sanitary Thermowell', price: 50, img: 'IMG_20240227_010648.png' }
 
-      ],
-      'scanner': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
+            ],
+      'indicators-controller': [
+                { name: 'Temperature Indicator', price: 45, img: 'IMG_20240227_010648.png' },
+                { name: 'Universal Indicator', price: 55, img: 'hum-sensor.png' },
+                { name: 'Universal PID Controller', price: 55, img: 'hum-sensor.png' },
+                { name: 'Temperature / Humidity PID Controller', price: 55, img: 'hum-sensor.png' },
+                { name: 'Temperature PID Controller', price: 65, img: 'TrmoCpl.png' }
 
-      ],
-      'humidity': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
+            ],
+      'scanner-datalogger': [
+                { name: 'Temperature Scanner', price: 45, img: 'IMG_20240227_010648.png' },
+                { name: 'Universal Scanner', price: 55, img: 'hum-sensor.png' },
+                { name: 'Universal Datalogger', price: 65, img: 'TrmoCpl.png' },
+                { name: 'Expandable Datalogger', price: 65, img: 'TrmoCpl.png' },
+                { name: 'Touch Screen Datalogger', price: 65, img: 'TrmoCpl.png' }
 
-      ],
-      'spare-parts': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
+            ],
+      'humidity-sensor': [
+                { name: 'RH-50', price: 45, img: 'IMG_20240227_010648.png' },
+                { name: 'RH-50', price: 55, img: 'hum-sensor.png' },
+                { name: 'THS Series 100deg C', price: 65, img: 'TrmoCpl.png' },
+                { name: 'THS Series 100deg C', price: 65, img: 'TrmoCpl.png' }
 
-      ],
-      'USB-Converter': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
+            ],
+     'spare-parts': [
+                { name: 'SSR', price: 45, img: 'IMG_20240227_010648.png' },
+                { name: 'Heatsink', price: 55, img: 'hum-sensor.png' },
+                { name: 'Thermoistor', price: 65, img: 'TrmoCpl.png' },
+                { name: 'Proximity', price: 65, img: 'TrmoCpl.png' },
+                { name: 'Float Switch', price: 65, img: 'TrmoCpl.png' },
+                { name: 'Level Sensor', price: 65, img: 'TrmoCpl.png' },
+                { name: 'Cables and Wires', price: 65, img: 'TrmoCpl.png' }
 
-      ],
-      'indicators': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
-
-      ],
-      'Ethernet-Converter': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
-
-      ],
-      'SMPS': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
-
-      ],
-      'proximity': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
-
-      ],
-      'traverse-unit': [
-          { name: 'UNILOG PRO PLUS', price: 45, img: 'IMG_20240227_010648.png' },
-          { name: 'UNIREC', price: 55, img: 'hum-sensor.png' },
-          { name: 'UNIREC PRO', price: 65, img: 'TrmoCpl.png' }
-
-      ]
+            ]
+      
   };
 
 
@@ -175,10 +161,10 @@ const Products = () => {
                                     <div className="glass">
                                         <div className="test">
                                             <div className="test2">
-                                                <img src="src\components\Images\itm2.png" alt="" />
+                                                <img src="src\components\Images\rtd.png" alt="" />
                                             </div>
                                             <div className="test3">
-                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('thermo-couples'); }}>RTD Sensors</i></h3>
+                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('thermo-couples'); }}>Thermocouples</i></h3>
                                             </div>
                                         </div>
                                     </div>
@@ -197,10 +183,10 @@ const Products = () => {
                                     <div className="glass">
                                         <div className="test">
                                             <div className="test2">
-                                                <img src="src\components\Images\itm2.png" alt="" />
+                                                <img src="src\components\Images\thermowell.png" alt="" />
                                             </div>
                                             <div className="test3">
-                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('thermo-couples'); }}>RTD Sensors</i></h3>
+                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('thermo-couples'); }}>Thermowells</i></h3>
                                             </div>
                                         </div>
                                     </div>
@@ -219,11 +205,11 @@ const Products = () => {
                                     <div className="glass">
                                         <div className="test">
                                             <div className="test2">
-                                                <img src="src\components\Images\itm2.png" alt="" />
+                                                <img src="src\components\Images\indecator.png" alt="" />
                                             </div>
 
                                             <div className="test3">
-                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('thermo-couples'); }}>RTD Sensors</i></h3>
+                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('thermo-couples'); }}>Indicators & Scanners</i></h3>
                                             </div>
                                         </div>
                                     </div>
@@ -242,10 +228,10 @@ const Products = () => {
                                     <div className="glass">
                                         <div className="test">
                                             <div className="test2">
-                                                <img src="src\components\Images\itm2.png" alt="" />
+                                                <img src="src\components\Images\pid.png" alt="" />
                                             </div>
                                             <div className="test3">
-                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('thermo-couples'); }}>RTD Sensors</i></h3>
+                                                <h3><i onClick={() => { add('thermo-couples'); hide(); showCategory('pid-controller'); }}>PID Controllers</i></h3>
                                             </div>
                                         </div>
                                     </div>

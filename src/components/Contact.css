@@ -1,5 +1,5 @@
 .containerer {
- width: 100%; 
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: #d4ebe8;
@@ -8,6 +8,7 @@
   text-align: center;
 
 }
+
 h1 {
   color: #000000;
 }
@@ -16,8 +17,8 @@ h1 {
   font-size: xx-large !important;
 }
 
-#contactForm{
-font-family: "Exo 2";
+#contactForm {
+  font-family: "Exo 2";
 }
 
 .form-grouper {
@@ -31,7 +32,8 @@ label {
   margin-bottom: 5px;
   color: #333;
 }
-.inputer{
+
+.inputer {
   width: 100%;
   padding: 6px;
   border: 1px solid #ccc;
@@ -55,6 +57,8 @@ button:hover {
 .contacter {
   display: flex;
   width: 100%;
+  padding-top: 5rem;
+  justify-content: center;
 }
 
 .lefter {
@@ -64,7 +68,7 @@ button:hover {
   display: flex;
   width: 50%;
   margin: 20px;
- 
+
   border-radius: 16px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -135,4 +139,20 @@ button:hover {
   height: 50vh;
 }
 
+@media (max-width: 700px) {
 
+  .contacter {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  .righter {
+    width: 75%;
+    margin: 20px;
+  }
+
+}

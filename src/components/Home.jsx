@@ -81,7 +81,9 @@ const HomePage = () => {
         roundElement?.addEventListener('click', roundClickHandler);
         window.addEventListener('scroll', handleScroll);
 
-        showSlides();
+        showSlides(); // Initial call to start slideshow
+
+        // Cleanup function
         return () => {
             hamburgerElement?.removeEventListener('click', hamburgerClickHandler);
             roundElement?.removeEventListener('click', roundClickHandler);
@@ -131,6 +133,7 @@ const HomePage = () => {
                     </div>
 
                     <div className="box">
+                        {/* Card components */}
                         <div className="container-h">
                             <div className="card">
                                 <div className="imgBx">
@@ -148,12 +151,12 @@ const HomePage = () => {
                         <div className="container-h">
                             <div className="card">
                                 <div className="imgBx">
-                                    <img src="src/components/Images/TrmoCpl.png" alt="Thermocouple" />
+                                    <img style={{width: '273px'}} src="src/components/Images/RTD-main.png" alt="Thermocouple" />
                                 </div>
                                 <div className="contentBx">
-                                    <h2>Thermocouple</h2>
+                                    <h2>RTD</h2>
                                     <div className="color">
-                                        <p>We offer J-type, K-type, R-type, S-type, and N-type thermocouples. Our thermocouples can be designed in wire type and head type assemblies, including flameproof heads, suitable for temperatures ranging from 0°C to 1600°C.</p>
+                                        <p>Resistance Temperature Detector (RTD) sensors are available in Pt-100 and Pt-1000 elements. We can design RTD sensors for a range of -100°C to 600°C, available in both simplex and duplex assemblies.</p>
                                     </div>
                                 </div>
                             </div>
@@ -162,12 +165,12 @@ const HomePage = () => {
                         <div className="container-h">
                             <div className="card">
                                 <div className="imgBx">
-                                    <img src="src/components/Images/TrmoCpl.png" alt="Thermocouple" />
+                                    <img style={{width: '253px', transform: 'translate(-50%, -50%) rotate(2deg)', left: '50%'}} src="src/components/Images/thermowell-1.png" alt="Thermocouple" />
                                 </div>
                                 <div className="contentBx">
-                                    <h2>Thermocouple</h2>
+                                    <h2>Thermowells</h2>
                                     <div className="color">
-                                        <p>We offer J-type, K-type, R-type, S-type, and N-type thermocouples. Our thermocouples can be designed in wire type and head type assemblies, including flameproof heads, suitable for temperatures ranging from 0°C to 1600°C.</p>
+                                        <p> Thermowells, also known as protection tubes, are essential for safeguarding the sensors. We offer both fabricated and bar stock thermowells, available in a variety of materials SS-(310/316) Inconel-600, Ceramic tube(610 & 710)</p>
                                     </div>
                                 </div>
                             </div>
