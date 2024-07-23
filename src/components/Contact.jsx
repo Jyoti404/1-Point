@@ -79,7 +79,7 @@ const Contact = () => {
     return (
         <div>
             <div className="contacter">
-                <div className="lefter">
+                {/* <div className="lefter">
                     <div className="naming">
                         <h2>Point One Control</h2>
                         <h3>The Accuracy Expert</h3>
@@ -99,7 +99,7 @@ const Contact = () => {
                             <h3>+91 9219998403</h3>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="righter">
                     <div className="containerer">
                         <h1>Contact Us</h1>
